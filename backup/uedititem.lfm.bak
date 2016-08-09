@@ -1,0 +1,105 @@
+object Form2: TForm2
+  Left = 443
+  Height = 270
+  Top = 264
+  Width = 483
+  Anchors = [akTop]
+  Caption = 'Edit Item Information'
+  ClientHeight = 270
+  ClientWidth = 483
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  LCLVersion = '1.4.4.0'
+  object LblName: TLabel
+    Left = 64
+    Height = 40
+    Top = 24
+    Width = 350
+    Anchors = [akTop]
+    Caption = 'Edit Item Information'
+    Font.Height = -34
+    Font.Name = 'Lucida Grande'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 110
+    Height = 16
+    Top = 92
+    Width = 18
+    Caption = 'ID:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 141
+    Height = 22
+    Top = 88
+    Width = 274
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Label2: TLabel
+    Left = 89
+    Height = 16
+    Top = 122
+    Width = 40
+    Caption = 'Name:'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 141
+    Height = 22
+    Top = 118
+    Width = 274
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 1
+    Text = 'Edit2'
+  end
+  object Label3: TLabel
+    Left = 68
+    Height = 16
+    Top = 152
+    Width = 61
+    Caption = 'Category:'
+    ParentColor = False
+  end
+  object ComboBoxCategory: TComboBox
+    Left = 141
+    Height = 20
+    Top = 150
+    Width = 274
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 0
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object BtnSave: TButton
+    Left = 340
+    Height = 25
+    Top = 208
+    Width = 75
+    Anchors = [akTop, akRight]
+    Caption = 'Save'
+    OnClick = BtnSaveClick
+    TabOrder = 3
+  end
+  object ComboBoxLocation: TComboBox
+    Left = 141
+    Height = 21
+    Top = 180
+    Width = 274
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 0
+    Style = csSimple
+    TabOrder = 4
+  end
+  object Label4: TLabel
+    Left = 68
+    Height = 16
+    Top = 182
+    Width = 58
+    Caption = 'Location:'
+    ParentColor = False
+  end
+end
